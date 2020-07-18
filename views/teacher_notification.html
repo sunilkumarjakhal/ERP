@@ -1,0 +1,93 @@
+<head>
+<style>
+
+</style>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Notification</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sl-slide.css">
+	<link rel="stylesheet" href="css/teacher_notification.css">
+ <!-- endbuild -->  <!-- endbuild -->
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <link rel="shortcut icon" href="images/favicon.png">
+	<script src="jquery-3.2.1.min.js"></script>
+
+</head>
+
+<body>
+    <!--Header-->
+    <header class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a id="logo" class="pull-left" href="index.html"></a>
+                <div class="nav-collapse collapse pull-right">
+                    <ul class="nav">
+                         <li ><a href="teacher_login.html">Home</a></li>
+                        <li><a href="teacher_takeAttendence.html">Take Attendance</a></li>
+                        <li><a href="change_Password.html">Change Password</a></li>
+                        <li class="active"><a href="teacher_notification.html">Add Notification</a></li>
+                        <li><a href="teacher_contactUs.html">Contact Us</a></li>
+						<li><a href="logout">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+	<div class="body1"><center>
+	<div class="left1">
+	<form>
+<div id="heading" style="display:block">
+<center><h3>Notification for Students</h3></center>
+    <lebel id="star" style="color:red">*</lebel>Notification heading :<br><br>
+     <input type="text" name="notification_heading" id="notification_heading" required><br><br>
+     select Notification Option :<br><br>
+      <div id="slelectBox">
+
+    </div>
+   <input type="button"  id="textbtn" name="textbtn" value="Send Text Notification">
+   <input type="button"  id="filebtnbtn" name="filebtnbtn" value="Send File Notification"></div><br><br>
+     <div id="text_div" style="display:none"><lebel id="star" style="color:red">*</lebel>Send notification as text :<br><br>
+     <input type="text" name="notification_content" id="notification_content" required><br><br>
+     <input type="submit"  id="submit_to_teacher" value="Submit">
+     </div>
+     <div id="file_div" style="display:none"><lebel id="star" style="color:red">*</lebel>Send notification as file :<br><br>
+     <input type="file" id="file"><br><br>
+
+     </div><br><br>
+ </form>
+
+
+	</div>
+
+</center>
+	</div>
+
+
+
+
+
+
+    <script src="js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+       <script src="/socket.io/socket.io.js" ignore='true'></script>
+    <script src="js/teacher_notification.js"></script>
+    <script src="js/jquery.ba-cond.min.js"></script>
+    <script src="js/jquery.slitslider.js"></script>
+  <script src="js/common.js"></script> <!-- endbuild -->
+</body>
+</html>

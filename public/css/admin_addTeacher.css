@@ -1,0 +1,48 @@
+
+
+
+
+
+@media only screen and (min-width: 100px) and (max-width: 768px)
+{
+.left1{
+
+background : linear-gradient(#00c6ff,#0072ff);
+height:480px;
+width:100%;
+overflow-y:scroll;
+}
+
+table{
+width:60%;
+margin: 10px 20%;
+}
+input{
+  width: 90%
+}
+select{
+    width: 90%;
+}
+
+}
+@media  only screen and (min-width: 768px)
+{
+
+.left1{
+background : linear-gradient(#00c6ff,#0072ff);
+height:635px;
+width:100%;
+overflow-y:scroll;
+}
+table{
+width:60%;
+margin: 10px 20%;
+}
+input{
+  width: 90%
+}
+select{
+    width: 90%;
+}
+	
+}

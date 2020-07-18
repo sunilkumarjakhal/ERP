@@ -1,0 +1,242 @@
+<head>
+<style>
+
+</style>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Add Student</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width">
+<!-- build:css css/admin_addStudent.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sl-slide.css">
+	   <link rel="stylesheet" href="css/admin_addStudent.css">
+     <link rel="shortcut icon" href="images/favicon.png">
+
+
+ <!-- endbuild -->
+
+
+
+
+
+</head>
+
+<body>
+    <!--Header-->
+    <header class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a id="logo" class="pull-left" href="index.html"></a>
+                <div class="nav-collapse collapse pull-right">
+                    <ul class="nav">
+                        <li ><a href="admin_login.html">Home</a></li>
+                        <li><a href="adminAllTeacherList.html">Teacher</a></li>
+                        <li class="active"><a href="adminAllStudentList.html">Student</a></li>
+                        <li><a href="admin_notification.html">Add notification</a></li>
+						<li><a href="logout">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+	<div class="body1" >
+	<div class="left1" >
+	<form name="myform" id="myform" >
+<center><h3 >1. General Information<h3></h3>
+<table id="fill_details">
+<tr>
+     <td><lebel id="star" style="color:red">*</lebel>Name :</td>
+     <td><input type="text" name="name" id="name" required></td>
+     <td><lebel id="star" style="color:red">*</lebel>Mobile No. :</td>
+     <td><input type="number" name="mob_no" id="mob_no"  min="7000000000" max="9999999999" required></td>
+</tr>
+<tr>
+     <td><lebel id="star" style="color:red">*</lebel>Roll No :</td>
+     <td><input type="text" name="rollno" id="rollno" required></td>
+     <td><lebel id="star" style="color:red">*</lebel>Batch Name :</td>
+     <td><input type="number" name="batch_name" id="batch_name" min="2018" max="2050" required></td>
+</tr>
+<tr>
+     <td><lebel id="star" style="color:red">*</lebel>Class :</td>
+     <td><select id="classs" name="classs" required>
+	 <option value="" name="">class</option>
+	 <option value="csea" name="csea">CSE A</option>
+	 <option value="cseb" name="cseb">CSE B</option>
+	 <option value="ecea" name="ecea">ECE A</option>
+	 <option value="eceb" name="eceb">ECE B</option>
+	 <option value="mech" name="mech">MECH</option>
+	 <option value="bt" name="bt">BT</option>
+	 </select></td>
+     <td><lebel id="star" style="color:red">*</lebel>Semester :</td>
+      <td><select id="sem" name="sem" required>
+	 <option value="" name="">Sem</option>
+	 <option value="1" name="1">1</option>
+	 <option value="2" name="2">2</option>
+	 <option value="3" name="3">3</option>
+	 <option value="4" name="4">4</option>
+	 <option value="5" name="5">5</option>
+	 <option value="6" name="6">6</option>
+	 <option value="7" name="7">7</option>
+	 <option value="8" name="8">8</option>
+	 </select></td>
+</tr>
+<tr>
+     <td><lebel id="star" style="color:red">*</lebel>Father's Name :</td>
+     <td><input type="text" name="fname" id="fname" required></td>
+     <td>Father's Mobile No. :</td>
+     <td><input type="number" name="fmob_no" id="fmob_no"></td>
+</tr>
+<tr>
+     <td><lebel id="star" style="color:red">*</lebel>Father's Occupation :</td>
+     <td><input type="text" name="foccupation" id="foccupation" required></td>
+     <td><lebel id="star" style="color:red">*</lebel>Mother's Name :</td>
+     <td><input type="text" name="mname" id="mname" required></td>
+</tr>
+<tr>
+     <td><lebel id="star" style="color:red">*</lebel>DOB :</td>
+     <td><input type="date" name="dob" id="dob" required min="1980-01-01" max="2000-01-01"></td>
+     <td><lebel id="star" style="color:red">*</lebel>Religion</td>
+     <td><select name="religion" id="religion" required>
+        <option value="">Religion</option>
+         <option value="hindu">Hindu</option>
+          <option value="muslim">Muslim</option>
+           <option value="sikh">Sikh</option>
+            <option value="other">Other</option>
+
+     </select></td>
+
+</tr>
+<tr>
+     <td><lebel id="star" style="color:red">*</lebel>Blood Group :</td>
+     <td><select name="bg" id="bg" required>
+        <option >Blood Group</option>
+         <option value="o+">O+</option>
+         <option value="o-">O-</option>
+         <option value="a+">A+</option>
+         <option value="a-">A-</option>
+         <option value="b+">B+</option>
+          <option value="b-">B-</option>
+           <option value="ab+">AB+</option>
+            <option value="ab-">AB-</option>
+            <option value="other">Other</option>
+
+     </select></td>
+     <td><lebel id="star" style="color:red">*</lebel>Gender :</td>
+
+       <td><select name="gender" id="gender" required>
+        <option value="">Gender</option>
+         <option value="male">Male</option>
+         <option value="female">Female</option>
+            <option value="other">Other</option>
+
+     </select></td>
+</tr>
+<tr>
+     <td><lebel id="star" style="color:red">*</lebel>Nationality :</td>
+     <td><input type="text" name="Nationality" id="Nationality" required></td>
+     <td><lebel id="star" style="color:red">*</lebel>Caste :</td>
+     <td><input type="text" name="caste" id="caste" required></td>
+</tr>
+<tr>
+     <td><lebel id="star" style="color:red">*</lebel>Category :</td>
+     <td><input type="text" name="Category" id="Category" required></td>
+     <td><lebel id="star" style="color:red">*</lebel>Family Income :</td>
+     <td><input type="number" name="family_income" id="family_income" required></td>
+</tr>
+<tr>
+     <td>Voter Card No :</td>
+     <td><input type="text" name="voter_card_no" id="voter_card_no"></td>
+     <td><lebel id="star" style="color:red">*</lebel>Aadhar Card No</td>
+     <td><input type="number" name="aadhar_card_no" id="aadhar_card_no" required min="100000000000" max="999999999999"></td>
+</tr>
+
+<tr>
+     <td><lebel id="star" style="color:red">*</lebel>Rural/Urban  :</td>
+       <td><select name="residancy" id="residancy" required>
+
+         <option value="rural">Rural</option>
+         <option value="urban">Urban</option>
+
+
+     </select></td>
+     <td><lebel id="star" style="color:red">*</lebel>Email_ID :</td>
+     <td><input type="email" name="email" id="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required>
+	 <span class="error" aria-live="polite"></span></td>
+</tr>
+<tr>
+     <td><lebel id="star" style="color:red">*</lebel>Class Group :</td>
+     <td><select id="classs_group" name="classs_group" required>
+     <option value="" name='0'>Class Group</option>
+     <option value="1" name="1">1</option>
+     <option value="2" name="2">2</option>
+     <option value="3" name="3">3</option>
+
+     </select></td>
+
+</tr>
+
+<tr>
+     <td><lebel id="star" style="color:red">*</lebel>Address :</td>
+     <td><input type="text" name="address" id="address" required></td>
+
+</tr>
+
+<tr>
+     <td><lebel id="star" style="color:red">*</lebel>City :</td>
+     <td><input type="text" name="city" id="city" required></td>
+     <td><lebel id="star" style="color:red">*</lebel>Distt.</td>
+     <td><input type="text" name="distt" id="distt" required></td>
+</tr>
+<tr>
+     <td><lebel id="star" style="color:red">*</lebel>State :</td>
+     <td><input type="text" name="state" id="state" required></td>
+     <td><lebel id="star" style="color:red">*</lebel>Pin No.</td>
+     <td><input type="number" name="pin" id="pin" required min="100000" max="999999"></td>
+</tr>
+<tr>
+     <td>Land Line No :</td>
+     <td><input type="number" name="landline" id="landline"></td>
+     <td><lebel id="star" style="color:red">*</lebel>Country.</td>
+     <td><input type="text" name="country" id="country" required></td>
+</tr>
+
+
+
+</table>
+
+<input type="submit"  width="60px" id="submit" value="Submit">
+
+ </form>
+
+	</div>
+
+
+	</div>
+
+
+
+
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+      <script src="js/vendor/jquery-1.9.1.min.js"></script>
+      <script src="js/vendor/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+  	  <script src="js/admin_addStudent.js"></script>
+      <script src="js/jquery.ba-cond.min.js"></script>
+      <script src="js/jquery.slitslider.js"></script>
+        <script src="js/common.js"></script>
+ <!-- endbuild --> 
+
+</body>
+</html>
