@@ -13,7 +13,7 @@
         "consolidate": "^0.14.5",
         "cookie-parser": "~1.4.3",
         "debug": "~2.6.3",
-        "express": "~4.15.2",
+        "express": "~4.17.3",
         "file-base64": "^1.0.0",
         "font-awesome": "^4.7.0",
         "mongodb": "^2.2.31",
